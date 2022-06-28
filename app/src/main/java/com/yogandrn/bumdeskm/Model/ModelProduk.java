@@ -1,0 +1,71 @@
+package com.yogandrn.bumdeskm.Model;
+
+public class ModelProduk {
+
+    private int  hg_jual, jml_stok, jml_terjual, berat;
+    private String barang, deskripsi, gambar, id_brg;
+
+    public String getId_brg() {
+        return id_brg;
+    }
+
+    public void setId_brg(String id_brg) {
+        this.id_brg = id_brg;
+    }
+
+    public int getHg_jual() {
+        return hg_jual;
+    }
+
+    public void setHg_jual(int hg_jual) {
+        this.hg_jual = hg_jual;
+    }
+
+    public int getJml_stok() {
+        return jml_stok;
+    }
+
+    public int getBerat() {
+        return berat;
+    }
+
+    public void setBerat(int berat) {
+        this.berat = berat;
+    }
+
+    public void setJml_stok(int jml_stok) {
+        this.jml_stok = jml_stok;
+    }
+
+    public String getBarang() {
+        return barang;
+    }
+
+    public void setBarang(String barang) {
+        this.barang = barang;
+    }
+
+    public String getDeskripsi() {
+        return deskripsi;
+    }
+
+    public void setDeskripsi(String deskripsi) {
+        this.deskripsi = deskripsi;
+    }
+
+    public int getJml_terjual() {
+        return jml_terjual;
+    }
+
+    public void setJml_terjual(int jml_terjual) {
+        this.jml_terjual = jml_terjual;
+    }
+
+    public String getGambar() {
+        return gambar;
+    }
+
+    public void setGambar(String gambar) {
+        this.gambar = gambar;
+    }
+}
