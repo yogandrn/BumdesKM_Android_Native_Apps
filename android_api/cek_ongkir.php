@@ -8,14 +8,8 @@ $asal = '68124';
 $kurir = 'jne';
 $totalberat = 0;
 
-// $querycart = mysqli_fetch_assoc(mysqli_query($conn, "SELECT * FROM keranjang WHERE id_user = '$id_user'")) ;
 $querycart = mysqli_query($conn, "SELECT * FROM keranjang WHERE id_user = '$id_user'") ;
 
-// foreach($querycart as $data) {
-//   $idb = $data['id_barang'];
-//   $getBerat = mysqli_fetch_assoc(mysqli_query($conn, "SELECT * FROM data_brg WHERE id_brg = '$id_brg'"));
-//   $berat += $getBerat['berat'];
-// }
 
 while ($data_brg = mysqli_fetch_assoc($querycart)) {
   $idb = $data_brg['id_barang'];
@@ -40,7 +34,7 @@ curl_setopt_array($curl, array(
 //   CURLOPT_POSTFIELDS => "origin=68124&destination=61473&weight=400&courier=jne",
   CURLOPT_HTTPHEADER => array(
     "content-type: application/x-www-form-urlencoded",
-    "key: dbb01554f7fa308466e6dcc8b335378b"
+    "key: ************************"
   ),
 ));
 
